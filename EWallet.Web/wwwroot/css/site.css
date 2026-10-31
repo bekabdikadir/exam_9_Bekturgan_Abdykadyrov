@@ -1,0 +1,11 @@
+body {
+    background-color: #f5f7fb;
+}
+
+.toast-container {
+    z-index: 2000;
+}
+
+.card {
+    border-radius: 0.75rem;
+}

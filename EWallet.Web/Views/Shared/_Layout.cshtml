@@ -1,0 +1,91 @@
+@{
+    var returnUrl = $"{Context.Request.Path}{Context.Request.QueryString}";
+    var isAuthenticated = User.Identity?.IsAuthenticated == true;
+}
+<!DOCTYPE html>
+<html lang="@System.Globalization.CultureInfo.CurrentUICulture.TwoLetterISOLanguageName">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - @L["App_Name"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" asp-controller="Home" asp-action="Index">@L["App_Name"]</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Home" asp-action="Index">@L["Nav_Home"]</a>
+                    </li>
+                    @if (isAuthenticated)
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Wallet" asp-action="Transfer">@L["Nav_Transfer"]</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Wallet" asp-action="Payment">@L["Nav_Payment"]</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Wallet" asp-action="Journal">@L["Nav_Journal"]</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Profile" asp-action="Index">@L["Nav_Profile"]</a>
+                        </li>
+                    }
+                </ul>
+                <ul class="navbar-nav align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Home" asp-action="SetLanguage" asp-route-culture="ru" asp-route-returnUrl="@returnUrl">@L["Lang_ru"]</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Home" asp-action="SetLanguage" asp-route-culture="en" asp-route-returnUrl="@returnUrl">@L["Lang_en"]</a>
+                    </li>
+                    @if (isAuthenticated)
+                    {
+                        <li class="nav-item">
+                            <span class="navbar-text me-lg-3">@L["Nav_Account", User.Identity!.Name!, User.FindFirst("AccountNumber")?.Value ?? string.Empty]</span>
+                        </li>
+                        <li class="nav-item">
+                            <form asp-controller="Account" asp-action="Logout" method="post" class="d-inline">
+                                <button type="submit" class="btn btn-outline-light btn-sm">@L["Nav_Logout"]</button>
+                            </form>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Account" asp-action="Login">@L["Nav_Login"]</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Account" asp-action="Register">@L["Nav_Register"]</a>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div id="toast-container" class="toast-container position-fixed top-0 start-50 translate-middle-x p-3"></div>
+
+<main class="container py-4 flex-grow-1">
+    @RenderBody()
+</main>
+
+<footer class="border-top bg-white text-muted py-3 mt-auto">
+    <div class="container">&copy; @DateTime.UtcNow.Year @L["App_Name"]</div>
+</footer>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<partial name="_AjaxScripts" />
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

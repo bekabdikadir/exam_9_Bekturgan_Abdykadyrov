@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="App_Name" xml:space="preserve">
+    <value>Электронный кошелёк</value>
+  </data>
+  <data name="Currency" xml:space="preserve">
+    <value>сом</value>
+  </data>
+  <data name="Lang_ru" xml:space="preserve">
+    <value>Русский</value>
+  </data>
+  <data name="Lang_en" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="Nav_Home" xml:space="preserve">
+    <value>Главная</value>
+  </data>
+  <data name="Nav_Transfer" xml:space="preserve">
+    <value>Перевод</value>
+  </data>
+  <data name="Nav_Payment" xml:space="preserve">
+    <value>Оплата услуг</value>
+  </data>
+  <data name="Nav_Journal" xml:space="preserve">
+    <value>Журнал транзакций</value>
+  </data>
+  <data name="Nav_Login" xml:space="preserve">
+    <value>Войти</value>
+  </data>
+  <data name="Nav_Register" xml:space="preserve">
+    <value>Регистрация</value>
+  </data>
+  <data name="Nav_Logout" xml:space="preserve">
+    <value>Выйти</value>
+  </data>
+  <data name="Nav_Account" xml:space="preserve">
+    <value>{0} (счёт № {1})</value>
+  </data>
+  <data name="Home_Welcome" xml:space="preserve">
+    <value>Ваш электронный кошелёк</value>
+  </data>
+  <data name="Home_WelcomeText" xml:space="preserve">
+    <value>Пополняйте счёт, переводите средства и оплачивайте услуги онлайн.</value>
+  </data>
+  <data name="Home_Balance" xml:space="preserve">
+    <value>Ваш баланс</value>
+  </data>
+  <data name="Home_TopUpTitle" xml:space="preserve">
+    <value>Пополнение личного счёта</value>
+  </data>
+  <data name="Home_TopUpHint" xml:space="preserve">
+    <value>Укажите номер личного счёта и сумму пополнения. Авторизация не требуется.</value>
+  </data>
+  <data name="Btn_TopUp" xml:space="preserve">
+    <value>Пополнить</value>
+  </data>
+  <data name="Btn_Transfer" xml:space="preserve">
+    <value>Перевести</value>
+  </data>
+  <data name="Btn_Pay" xml:space="preserve">
+    <value>Оплатить</value>
+  </data>
+  <data name="Btn_Filter" xml:space="preserve">
+    <value>Применить</value>
+  </data>
+  <data name="Btn_Reset" xml:space="preserve">
+    <value>Сбросить</value>
+  </data>
+  <data name="Btn_Login" xml:space="preserve">
+    <value>Войти</value>
+  </data>
+  <data name="Btn_Register" xml:space="preserve">
+    <value>Зарегистрироваться</value>
+  </data>
+  <data name="Field_AccountNumber" xml:space="preserve">
+    <value>Номер личного счёта</value>
+  </data>
+  <data name="Field_RecipientAccount" xml:space="preserve">
+    <value>Номер счёта получателя</value>
+  </data>
+  <data name="Field_Amount" xml:space="preserve">
+    <value>Сумма</value>
+  </data>
+  <data name="Field_Vendor" xml:space="preserve">
+    <value>Поставщик услуг</value>
+  </data>
+  <data name="Field_Identifier" xml:space="preserve">
+    <value>Ваш реквизит (номер телефона / лицевого счёта)</value>
+  </data>
+  <data name="Field_Password" xml:space="preserve">
+    <value>Пароль</value>
+  </data>
+  <data name="Field_ConfirmPassword" xml:space="preserve">
+    <value>Подтверждение пароля</value>
+  </data>
+  <data name="Field_RememberMe" xml:space="preserve">
+    <value>Запомнить меня</value>
+  </data>
+  <data name="Field_DateFrom" xml:space="preserve">
+    <value>Дата с</value>
+  </data>
+  <data name="Field_DateTo" xml:space="preserve">
+    <value>Дата по</value>
+  </data>
+  <data name="Login_Title" xml:space="preserve">
+    <value>Вход по email или номеру личного счёта</value>
+  </data>
+  <data name="Register_Title" xml:space="preserve">
+    <value>Регистрация</value>
+  </data>
+  <data name="Register_Hint" xml:space="preserve">
+    <value>Создайте учётную запись. После успешной регистрации вам будет присвоен уникальный 6-значный номер личного счёта.</value>
+  </data>
+  <data name="Registered_Title" xml:space="preserve">
+    <value>Регистрация завершена</value>
+  </data>
+  <data name="Registered_Text" xml:space="preserve">
+    <value>Номер вашего личного счёта:</value>
+  </data>
+  <data name="Registered_Hint" xml:space="preserve">
+    <value>Запомните его: по нему (или по email) можно войти в систему, и он используется во всех операциях.</value>
+  </data>
+  <data name="Transfer_Title" xml:space="preserve">
+    <value>Перевод другому пользователю</value>
+  </data>
+  <data name="Payment_Title" xml:space="preserve">
+    <value>Оплата услуг</value>
+  </data>
+  <data name="Payment_SelectVendor" xml:space="preserve">
+    <value>Выберите поставщика</value>
+  </data>
+  <data name="Journal_Title" xml:space="preserve">
+    <value>История транзакций</value>
+  </data>
+  <data name="Journal_Empty" xml:space="preserve">
+    <value>Транзакции не найдены.</value>
+  </data>
+  <data name="Journal_Date" xml:space="preserve">
+    <value>Дата (UTC)</value>
+  </data>
+  <data name="Journal_Type" xml:space="preserve">
+    <value>Операция</value>
+  </data>
+  <data name="Journal_Amount" xml:space="preserve">
+    <value>Сумма</value>
+  </data>
+  <data name="Journal_Counterparty" xml:space="preserve">
+    <value>Контрагент</value>
+  </data>
+  <data name="Journal_Account" xml:space="preserve">
+    <value>Счёт № {0}</value>
+  </data>
+  <data name="TransactionType_TopUp" xml:space="preserve">
+    <value>Пополнение</value>
+  </data>
+  <data name="TransactionType_TransferOut" xml:space="preserve">
+    <value>Исходящий перевод</value>
+  </data>
+  <data name="TransactionType_TransferIn" xml:space="preserve">
+    <value>Входящий перевод</value>
+  </data>
+  <data name="TransactionType_Payment" xml:space="preserve">
+    <value>Оплата услуг</value>
+  </data>
+  <data name="Validation_Required" xml:space="preserve">
+    <value>Поле «{0}» обязательно для заполнения.</value>
+  </data>
+  <data name="Validation_AccountNumber" xml:space="preserve">
+    <value>Номер счёта должен состоять из 6 цифр.</value>
+  </data>
+  <data name="Validation_Amount" xml:space="preserve">
+    <value>Сумма должна быть от 0,01 до 1 000 000 000.</value>
+  </data>
+  <data name="Validation_Number" xml:space="preserve">
+    <value>Введите корректное число.</value>
+  </data>
+  <data name="Validation_ValueInvalid" xml:space="preserve">
+    <value>Введено недопустимое значение.</value>
+  </data>
+  <data name="Validation_PasswordLength" xml:space="preserve">
+    <value>Пароль должен содержать не менее 6 символов.</value>
+  </data>
+  <data name="Validation_PasswordCompare" xml:space="preserve">
+    <value>Пароли не совпадают.</value>
+  </data>
+  <data name="Validation_IdentifierLength" xml:space="preserve">
+    <value>Реквизит не должен превышать 50 символов.</value>
+  </data>
+  <data name="Error_AmountInvalid" xml:space="preserve">
+    <value>Некорректная сумма.</value>
+  </data>
+  <data name="Error_AccountNotFound" xml:space="preserve">
+    <value>Указанный личный счёт не существует.</value>
+  </data>
+  <data name="Error_RecipientNotFound" xml:space="preserve">
+    <value>Счёт получателя не существует. Перевод отменён.</value>
+  </data>
+  <data name="Error_SelfTransfer" xml:space="preserve">
+    <value>Нельзя перевести средства на собственный счёт.</value>
+  </data>
+  <data name="Error_InsufficientFunds" xml:space="preserve">
+    <value>Недостаточно средств на балансе.</value>
+  </data>
+  <data name="Error_VendorNotFound" xml:space="preserve">
+    <value>Выбранный поставщик не найден.</value>
+  </data>
+  <data name="Error_SubscriberNotFound" xml:space="preserve">
+    <value>Указанный реквизит у поставщика услуг не найден.</value>
+  </data>
+  <data name="Error_Unexpected" xml:space="preserve">
+    <value>Не удалось выполнить операцию. Повторите попытку.</value>
+  </data>
+  <data name="Home_AccountNumber" xml:space="preserve">
+    <value>Номер вашего счёта</value>
+  </data>
+  <data name="Field_UserName" xml:space="preserve">
+    <value>Имя пользователя</value>
+  </data>
+  <data name="Field_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Field_Login" xml:space="preserve">
+    <value>Email или номер счёта</value>
+  </data>
+  <data name="Validation_Email" xml:space="preserve">
+    <value>Введите корректный адрес email.</value>
+  </data>
+  <data name="Validation_UserNameLength" xml:space="preserve">
+    <value>Имя пользователя должно содержать от 3 до 50 символов.</value>
+  </data>
+  <data name="Identity_DuplicateEmail" xml:space="preserve">
+    <value>Этот email уже зарегистрирован.</value>
+  </data>
+  <data name="Identity_InvalidEmail" xml:space="preserve">
+    <value>Email указан некорректно.</value>
+  </data>
+  <data name="Error_LoginFailed" xml:space="preserve">
+    <value>Неверный email, номер счёта или пароль.</value>
+  </data>
+  <data name="Nav_Profile" xml:space="preserve">
+    <value>Профиль</value>
+  </data>
+  <data name="Profile_Title" xml:space="preserve">
+    <value>Мой профиль</value>
+  </data>
+  <data name="Profile_Info" xml:space="preserve">
+    <value>Данные счёта</value>
+  </data>
+  <data name="Profile_Requisites" xml:space="preserve">
+    <value>Мои реквизиты у поставщиков</value>
+  </data>
+  <data name="Profile_NoRequisites" xml:space="preserve">
+    <value>Реквизиты не найдены.</value>
+  </data>
+  <data name="Profile_RequisitesHint" xml:space="preserve">
+    <value>Реквизиты у поставщиков создаются автоматически при регистрации.</value>
+  </data>
+  <data name="Profile_Identifier" xml:space="preserve">
+    <value>Реквизит</value>
+  </data>
+  <data name="Profile_Balance" xml:space="preserve">
+    <value>Баланс у поставщика</value>
+  </data>
+  <data name="Error_Title" xml:space="preserve">
+    <value>Произошла ошибка</value>
+  </data>
+  <data name="Error_Text" xml:space="preserve">
+    <value>При обработке запроса произошла ошибка.</value>
+  </data>
+  <data name="Success_TopUp" xml:space="preserve">
+    <value>Счёт {1} пополнен на {0} сом.</value>
+  </data>
+  <data name="Success_Transfer" xml:space="preserve">
+    <value>Перевод {0} сом на счёт {1} выполнен.</value>
+  </data>
+  <data name="Success_Payment" xml:space="preserve">
+    <value>Оплачено {0} сом поставщику «{1}» (реквизит {2}).</value>
+  </data>
+  <data name="Identity_Default" xml:space="preserve">
+    <value>Произошла неизвестная ошибка.</value>
+  </data>
+  <data name="Identity_PasswordTooShort" xml:space="preserve">
+    <value>Пароль должен содержать не менее {0} символов.</value>
+  </data>
+  <data name="Identity_PasswordRequiresDigit" xml:space="preserve">
+    <value>Пароль должен содержать цифру.</value>
+  </data>
+  <data name="Identity_PasswordRequiresLower" xml:space="preserve">
+    <value>Пароль должен содержать строчную букву.</value>
+  </data>
+  <data name="Identity_PasswordRequiresUpper" xml:space="preserve">
+    <value>Пароль должен содержать заглавную букву.</value>
+  </data>
+  <data name="Identity_PasswordRequiresNonAlphanumeric" xml:space="preserve">
+    <value>Пароль должен содержать специальный символ.</value>
+  </data>
+  <data name="Identity_DuplicateUserName" xml:space="preserve">
+    <value>Такое имя пользователя уже занято.</value>
+  </data>
+  <data name="Identity_InvalidUserName" xml:space="preserve">
+    <value>Имя пользователя указано некорректно.</value>
+  </data>
+</root>

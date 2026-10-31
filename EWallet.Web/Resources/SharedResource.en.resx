@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="App_Name" xml:space="preserve">
+    <value>E-Wallet</value>
+  </data>
+  <data name="Currency" xml:space="preserve">
+    <value>KGS</value>
+  </data>
+  <data name="Lang_ru" xml:space="preserve">
+    <value>Русский</value>
+  </data>
+  <data name="Lang_en" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="Nav_Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Nav_Transfer" xml:space="preserve">
+    <value>Transfer</value>
+  </data>
+  <data name="Nav_Payment" xml:space="preserve">
+    <value>Payment</value>
+  </data>
+  <data name="Nav_Journal" xml:space="preserve">
+    <value>Transactions</value>
+  </data>
+  <data name="Nav_Login" xml:space="preserve">
+    <value>Log in</value>
+  </data>
+  <data name="Nav_Register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="Nav_Logout" xml:space="preserve">
+    <value>Log out</value>
+  </data>
+  <data name="Nav_Account" xml:space="preserve">
+    <value>{0} (account № {1})</value>
+  </data>
+  <data name="Home_Welcome" xml:space="preserve">
+    <value>Your personal e-wallet</value>
+  </data>
+  <data name="Home_WelcomeText" xml:space="preserve">
+    <value>Top up your account, transfer money and pay for services online.</value>
+  </data>
+  <data name="Home_Balance" xml:space="preserve">
+    <value>Your balance</value>
+  </data>
+  <data name="Home_TopUpTitle" xml:space="preserve">
+    <value>Top up an account</value>
+  </data>
+  <data name="Home_TopUpHint" xml:space="preserve">
+    <value>Specify the account number and the amount. No authorization required.</value>
+  </data>
+  <data name="Btn_TopUp" xml:space="preserve">
+    <value>Top up</value>
+  </data>
+  <data name="Btn_Transfer" xml:space="preserve">
+    <value>Transfer</value>
+  </data>
+  <data name="Btn_Pay" xml:space="preserve">
+    <value>Pay</value>
+  </data>
+  <data name="Btn_Filter" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="Btn_Reset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="Btn_Login" xml:space="preserve">
+    <value>Log in</value>
+  </data>
+  <data name="Btn_Register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="Field_AccountNumber" xml:space="preserve">
+    <value>Account number</value>
+  </data>
+  <data name="Field_RecipientAccount" xml:space="preserve">
+    <value>Recipient account number</value>
+  </data>
+  <data name="Field_Amount" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="Field_Vendor" xml:space="preserve">
+    <value>Service provider</value>
+  </data>
+  <data name="Field_Identifier" xml:space="preserve">
+    <value>Your identifier (phone number / account number)</value>
+  </data>
+  <data name="Field_Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Field_ConfirmPassword" xml:space="preserve">
+    <value>Confirm password</value>
+  </data>
+  <data name="Field_RememberMe" xml:space="preserve">
+    <value>Remember me</value>
+  </data>
+  <data name="Field_DateFrom" xml:space="preserve">
+    <value>Date from</value>
+  </data>
+  <data name="Field_DateTo" xml:space="preserve">
+    <value>Date to</value>
+  </data>
+  <data name="Login_Title" xml:space="preserve">
+    <value>Log in with your email or account number</value>
+  </data>
+  <data name="Register_Title" xml:space="preserve">
+    <value>Registration</value>
+  </data>
+  <data name="Register_Hint" xml:space="preserve">
+    <value>Create an account. After successful registration a unique 6-digit account number will be assigned to you.</value>
+  </data>
+  <data name="Registered_Title" xml:space="preserve">
+    <value>Registration completed</value>
+  </data>
+  <data name="Registered_Text" xml:space="preserve">
+    <value>Your personal account number:</value>
+  </data>
+  <data name="Registered_Hint" xml:space="preserve">
+    <value>Remember it: you can log in with it (or with your email) and use it for all operations.</value>
+  </data>
+  <data name="Transfer_Title" xml:space="preserve">
+    <value>Transfer to another user</value>
+  </data>
+  <data name="Payment_Title" xml:space="preserve">
+    <value>Pay for services</value>
+  </data>
+  <data name="Payment_SelectVendor" xml:space="preserve">
+    <value>Select a provider</value>
+  </data>
+  <data name="Journal_Title" xml:space="preserve">
+    <value>Transaction history</value>
+  </data>
+  <data name="Journal_Empty" xml:space="preserve">
+    <value>No transactions found.</value>
+  </data>
+  <data name="Journal_Date" xml:space="preserve">
+    <value>Date (UTC)</value>
+  </data>
+  <data name="Journal_Type" xml:space="preserve">
+    <value>Operation</value>
+  </data>
+  <data name="Journal_Amount" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="Journal_Counterparty" xml:space="preserve">
+    <value>Counterparty</value>
+  </data>
+  <data name="Journal_Account" xml:space="preserve">
+    <value>Account № {0}</value>
+  </data>
+  <data name="TransactionType_TopUp" xml:space="preserve">
+    <value>Top up</value>
+  </data>
+  <data name="TransactionType_TransferOut" xml:space="preserve">
+    <value>Outgoing transfer</value>
+  </data>
+  <data name="TransactionType_TransferIn" xml:space="preserve">
+    <value>Incoming transfer</value>
+  </data>
+  <data name="TransactionType_Payment" xml:space="preserve">
+    <value>Service payment</value>
+  </data>
+  <data name="Validation_Required" xml:space="preserve">
+    <value>The field «{0}» is required.</value>
+  </data>
+  <data name="Validation_AccountNumber" xml:space="preserve">
+    <value>The account number must consist of 6 digits.</value>
+  </data>
+  <data name="Validation_Amount" xml:space="preserve">
+    <value>The amount must be between 0.01 and 1,000,000,000.</value>
+  </data>
+  <data name="Validation_Number" xml:space="preserve">
+    <value>Enter a valid number.</value>
+  </data>
+  <data name="Validation_ValueInvalid" xml:space="preserve">
+    <value>The entered value is invalid.</value>
+  </data>
+  <data name="Validation_PasswordLength" xml:space="preserve">
+    <value>The password must contain at least 6 characters.</value>
+  </data>
+  <data name="Validation_PasswordCompare" xml:space="preserve">
+    <value>Passwords do not match.</value>
+  </data>
+  <data name="Validation_IdentifierLength" xml:space="preserve">
+    <value>The identifier must not exceed 50 characters.</value>
+  </data>
+  <data name="Error_AmountInvalid" xml:space="preserve">
+    <value>Invalid amount.</value>
+  </data>
+  <data name="Error_AccountNotFound" xml:space="preserve">
+    <value>The specified account does not exist.</value>
+  </data>
+  <data name="Error_RecipientNotFound" xml:space="preserve">
+    <value>The recipient account does not exist. The transfer has been cancelled.</value>
+  </data>
+  <data name="Error_SelfTransfer" xml:space="preserve">
+    <value>You cannot transfer money to your own account.</value>
+  </data>
+  <data name="Error_InsufficientFunds" xml:space="preserve">
+    <value>Insufficient funds on your balance.</value>
+  </data>
+  <data name="Error_VendorNotFound" xml:space="preserve">
+    <value>The selected provider does not exist.</value>
+  </data>
+  <data name="Error_SubscriberNotFound" xml:space="preserve">
+    <value>The specified identifier was not found for this provider.</value>
+  </data>
+  <data name="Error_Unexpected" xml:space="preserve">
+    <value>The operation failed. Please try again.</value>
+  </data>
+  <data name="Home_AccountNumber" xml:space="preserve">
+    <value>Your account number</value>
+  </data>
+  <data name="Field_UserName" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="Field_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Field_Login" xml:space="preserve">
+    <value>Email or account number</value>
+  </data>
+  <data name="Validation_Email" xml:space="preserve">
+    <value>Enter a valid email address.</value>
+  </data>
+  <data name="Validation_UserNameLength" xml:space="preserve">
+    <value>The username must be 3 to 50 characters long.</value>
+  </data>
+  <data name="Identity_DuplicateEmail" xml:space="preserve">
+    <value>This email is already registered.</value>
+  </data>
+  <data name="Identity_InvalidEmail" xml:space="preserve">
+    <value>The email is invalid.</value>
+  </data>
+  <data name="Error_LoginFailed" xml:space="preserve">
+    <value>Invalid email, account number or password.</value>
+  </data>
+  <data name="Nav_Profile" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="Profile_Title" xml:space="preserve">
+    <value>My profile</value>
+  </data>
+  <data name="Profile_Info" xml:space="preserve">
+    <value>Account details</value>
+  </data>
+  <data name="Profile_Requisites" xml:space="preserve">
+    <value>My identifiers at providers</value>
+  </data>
+  <data name="Profile_NoRequisites" xml:space="preserve">
+    <value>No identifiers found.</value>
+  </data>
+  <data name="Profile_RequisitesHint" xml:space="preserve">
+    <value>Identifiers at providers are created automatically when you register.</value>
+  </data>
+  <data name="Profile_Identifier" xml:space="preserve">
+    <value>Identifier</value>
+  </data>
+  <data name="Profile_Balance" xml:space="preserve">
+    <value>Balance at provider</value>
+  </data>
+  <data name="Error_Title" xml:space="preserve">
+    <value>An error occurred</value>
+  </data>
+  <data name="Error_Text" xml:space="preserve">
+    <value>An error occurred while processing your request.</value>
+  </data>
+  <data name="Success_TopUp" xml:space="preserve">
+    <value>Account {1} has been topped up by {0} KGS.</value>
+  </data>
+  <data name="Success_Transfer" xml:space="preserve">
+    <value>{0} KGS have been transferred to account {1}.</value>
+  </data>
+  <data name="Success_Payment" xml:space="preserve">
+    <value>{0} KGS paid to «{1}» (identifier {2}).</value>
+  </data>
+  <data name="Identity_Default" xml:space="preserve">
+    <value>An unknown error occurred.</value>
+  </data>
+  <data name="Identity_PasswordTooShort" xml:space="preserve">
+    <value>The password must contain at least {0} characters.</value>
+  </data>
+  <data name="Identity_PasswordRequiresDigit" xml:space="preserve">
+    <value>The password must contain a digit.</value>
+  </data>
+  <data name="Identity_PasswordRequiresLower" xml:space="preserve">
+    <value>The password must contain a lowercase letter.</value>
+  </data>
+  <data name="Identity_PasswordRequiresUpper" xml:space="preserve">
+    <value>The password must contain an uppercase letter.</value>
+  </data>
+  <data name="Identity_PasswordRequiresNonAlphanumeric" xml:space="preserve">
+    <value>The password must contain a special character.</value>
+  </data>
+  <data name="Identity_DuplicateUserName" xml:space="preserve">
+    <value>This username is already taken.</value>
+  </data>
+  <data name="Identity_InvalidUserName" xml:space="preserve">
+    <value>The username is invalid.</value>
+  </data>
+</root>

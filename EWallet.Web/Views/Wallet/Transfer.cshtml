@@ -1,0 +1,33 @@
+@model TransferViewModel
+@{
+    ViewData["Title"] = L["Nav_Transfer"];
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-6">
+        @await Component.InvokeAsync("Balance")
+
+        <div class="card shadow-sm mt-4">
+            <div class="card-body">
+                <h1 class="h4 mb-3">@L["Transfer_Title"]</h1>
+                <form asp-controller="Wallet" asp-action="Transfer" method="post" data-ajax-form data-error-message="@L["Error_Unexpected"]">
+                    <div class="mb-3">
+                        <label asp-for="RecipientAccount" class="form-label"></label>
+                        <input asp-for="RecipientAccount" class="form-control" inputmode="numeric" maxlength="6" autocomplete="off" />
+                        <span asp-validation-for="RecipientAccount" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Amount" class="form-label"></label>
+                        <input asp-for="Amount" class="form-control" inputmode="decimal" autocomplete="off" />
+                        <span asp-validation-for="Amount" class="text-danger"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">@L["Btn_Transfer"]</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

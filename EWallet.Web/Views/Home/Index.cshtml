@@ -1,0 +1,56 @@
+@model TopUpViewModel
+@{
+    ViewData["Title"] = L["Nav_Home"];
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-7">
+        <div class="text-center mb-4">
+            <h1 class="display-6">@L["Home_Welcome"]</h1>
+            <p class="text-muted">@L["Home_WelcomeText"]</p>
+        </div>
+
+        @if (User.Identity?.IsAuthenticated == true)
+        {
+            @await Component.InvokeAsync("Balance")
+
+            <div class="d-flex flex-wrap gap-2 justify-content-center mt-4">
+                <a class="btn btn-primary" asp-controller="Wallet" asp-action="Transfer">@L["Nav_Transfer"]</a>
+                <a class="btn btn-primary" asp-controller="Wallet" asp-action="Payment">@L["Nav_Payment"]</a>
+                <a class="btn btn-outline-primary" asp-controller="Wallet" asp-action="Journal">@L["Nav_Journal"]</a>
+                <a class="btn btn-outline-primary" asp-controller="Profile" asp-action="Index">@L["Nav_Profile"]</a>
+            </div>
+        }
+        else
+        {
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="h5 mb-3">@L["Home_TopUpTitle"]</h2>
+                    <p class="text-muted">@L["Home_TopUpHint"]</p>
+                    <form asp-controller="Home" asp-action="TopUp" method="post" data-ajax-form data-error-message="@L["Error_Unexpected"]">
+                        <div class="mb-3">
+                            <label asp-for="AccountNumber" class="form-label"></label>
+                            <input asp-for="AccountNumber" class="form-control" inputmode="numeric" maxlength="6" autocomplete="off" />
+                            <span asp-validation-for="AccountNumber" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Amount" class="form-label"></label>
+                            <input asp-for="Amount" class="form-control" inputmode="decimal" autocomplete="off" />
+                            <span asp-validation-for="Amount" class="text-danger"></span>
+                        </div>
+                        <button type="submit" class="btn btn-success">@L["Btn_TopUp"]</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex gap-2 justify-content-center mt-4">
+                <a class="btn btn-primary" asp-controller="Account" asp-action="Login">@L["Nav_Login"]</a>
+                <a class="btn btn-outline-primary" asp-controller="Account" asp-action="Register">@L["Nav_Register"]</a>
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,18 @@
+@model string
+@{
+    ViewData["Title"] = L["Registered_Title"];
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+        <div class="card shadow-sm text-center">
+            <div class="card-body">
+                <h1 class="h4">@L["Registered_Title"]</h1>
+                <p class="mb-1">@L["Registered_Text"]</p>
+                <div class="display-4 fw-bold text-primary my-3">@Model</div>
+                <p class="text-muted">@L["Registered_Hint"]</p>
+                <a class="btn btn-primary" asp-controller="Home" asp-action="Index">@L["Nav_Home"]</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,68 @@
+@model ProfileDto
+@{
+    ViewData["Title"] = L["Profile_Title"];
+}
+
+<h1 class="h3 mb-4">@L["Profile_Title"]</h1>
+
+<div class="row g-4">
+    <div class="col-lg-4">
+        <div class="card shadow-sm h-100">
+            <div class="card-body">
+                <h2 class="h5 mb-3">@L["Profile_Info"]</h2>
+                <dl class="mb-0">
+                    <dt>@L["Field_UserName"]</dt>
+                    <dd>@Model.UserName</dd>
+                    <dt>@L["Field_Email"]</dt>
+                    <dd>@Model.Email</dd>
+                    <dt>@L["Home_AccountNumber"]</dt>
+                    <dd class="fw-bold text-primary fs-5">@Model.AccountNumber</dd>
+                    <dt>@L["Home_Balance"]</dt>
+                    <dd class="fw-bold fs-5 mb-0">@Model.Balance.ToMoney() @L["Currency"]</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-8">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h2 class="h5 mb-2">@L["Profile_Requisites"]</h2>
+                <p class="text-muted">@L["Profile_RequisitesHint"]</p>
+
+                @if (Model.Requisites.Count == 0)
+                {
+                    <div class="alert alert-info mb-0">@L["Profile_NoRequisites"]</div>
+                }
+                else
+                {
+                    <div class="table-responsive">
+                        <table class="table table-striped align-middle mb-0">
+                            <thead>
+                            <tr>
+                                <th>@L["Field_Vendor"]</th>
+                                <th>@L["Profile_Identifier"]</th>
+                                <th class="text-end">@L["Profile_Balance"]</th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @foreach (var item in Model.Requisites)
+                            {
+                                <tr>
+                                    <td>@item.VendorName</td>
+                                    <td>@item.Identifier</td>
+                                    <td class="text-end">@item.Balance.ToMoney() @L["Currency"]</td>
+                                    <td class="text-end">
+                                        <a class="btn btn-sm btn-primary" asp-controller="Wallet" asp-action="Payment" asp-route-vendorId="@item.VendorId" asp-route-identifier="@item.Identifier">@L["Btn_Pay"]</a>
+                                    </td>
+                                </tr>
+                            }
+                            </tbody>
+                        </table>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

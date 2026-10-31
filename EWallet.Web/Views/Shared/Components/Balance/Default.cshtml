@@ -1,0 +1,11 @@
+@model decimal
+
+<div class="card text-bg-light border-primary shadow-sm">
+    <div class="card-body text-center">
+        <div class="text-muted">@L["Home_AccountNumber"]: <strong>@User.FindFirst("AccountNumber")?.Value</strong></div>
+        <div class="text-muted mt-2">@L["Home_Balance"]</div>
+        <div class="display-5 fw-bold text-primary">
+            <span data-balance>@Model.ToMoney()</span> <small class="fs-5">@L["Currency"]</small>
+        </div>
+    </div>
+</div>

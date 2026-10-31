@@ -1,0 +1,40 @@
+@model PaymentViewModel
+@{
+    ViewData["Title"] = L["Nav_Payment"];
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-6">
+        @await Component.InvokeAsync("Balance")
+
+        <div class="card shadow-sm mt-4">
+            <div class="card-body">
+                <h1 class="h4 mb-3">@L["Payment_Title"]</h1>
+                <form asp-controller="Wallet" asp-action="Payment" method="post" data-ajax-form data-error-message="@L["Error_Unexpected"]">
+                    <div class="mb-3">
+                        <label asp-for="VendorId" class="form-label"></label>
+                        <select asp-for="VendorId" asp-items="Model.Vendors" class="form-select">
+                            <option value="">@L["Payment_SelectVendor"]</option>
+                        </select>
+                        <span asp-validation-for="VendorId" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Identifier" class="form-label"></label>
+                        <input asp-for="Identifier" class="form-control" autocomplete="off" />
+                        <span asp-validation-for="Identifier" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Amount" class="form-label"></label>
+                        <input asp-for="Amount" class="form-control" inputmode="decimal" autocomplete="off" />
+                        <span asp-validation-for="Amount" class="text-danger"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">@L["Btn_Pay"]</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
